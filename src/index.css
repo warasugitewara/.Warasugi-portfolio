@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #000000;
+}
+
+body {
+  background: linear-gradient(135deg, #000000 0%, #0a0a15 50%, #000000 100%);
+  font-family: 'Courier New', monospace;
+  color: #00ff00;
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Performance optimizations */
+@supports (display: grid) {
+  /* Use grid layout for better performance */
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
