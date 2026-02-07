@@ -404,7 +404,7 @@ body::after {
    ============================================ */
 
 #about {
-  padding: var(--spacing-xl) var(--spacing-lg);
+  padding: calc(var(--spacing-xl) + 100px) var(--spacing-lg) var(--spacing-xl);
   background: 
     linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 255, 0, 0.1) 100%),
     url('/minecraft-city.png') center/cover no-repeat fixed;
@@ -513,7 +513,7 @@ body::after {
    ============================================ */
 
 #projects {
-  padding: var(--spacing-xl) var(--spacing-lg);
+  padding: calc(var(--spacing-xl) + 80px) var(--spacing-lg) var(--spacing-xl);
   background: linear-gradient(180deg, transparent, rgba(255, 0, 255, 0.05));
   scroll-snap-align: start;
 }
@@ -630,7 +630,7 @@ body::after {
    ============================================ */
 
 #social {
-  padding: var(--spacing-xl) var(--spacing-lg);
+  padding: calc(var(--spacing-xl) + 80px) var(--spacing-lg) var(--spacing-xl);
   background: linear-gradient(180deg, rgba(255, 0, 255, 0.05), transparent);
   border-top: 1px solid var(--accent);
   scroll-snap-align: start;
