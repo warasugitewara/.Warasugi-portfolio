@@ -19,7 +19,7 @@ const resources = {
       // About Section
       section_about: '自己紹介',
       about_title: '自称マルチクリエイター',
-      about_desc1: 'コード、建築、デジタルアート。様々な創作活動に取り組む開発者です。Discord ボットや Minecraft プラグイン、フルスタック Web 開発、そして Cities Skylines での都市設計まで。',
+      about_desc1: 'コード、建築、デジタルアート。様々な創作活動に取り組む開発者です。Discord ボット、Minecraft プラグイン、フルスタック Web 開発、そして Minecraft での都市計画。',
       about_desc2: 'ユーザー体験を向上させるプロダクト作成に熱中しています。パフォーマンス、デザイン、イノベーションを追求し、クリーンで効率的なコードと美しいインターフェースを実現します。',
       
       // Projects Section
@@ -59,7 +59,7 @@ const resources = {
       
       section_about: 'About',
       about_title: 'Self-proclaimed Multi-Creator',
-      about_desc1: 'Code, architecture, digital art. I engage in diverse creative pursuits. Discord bots, Minecraft plugins, full-stack web development, and urban design in Cities Skylines.',
+      about_desc1: 'Code, architecture, digital art. I engage in diverse creative pursuits. Discord bots, Minecraft plugins, full-stack web development, and urban planning in Minecraft.',
       about_desc2: 'I am passionate about creating products that enhance user experience. Pursuing performance, design, and innovation—delivering clean, efficient code and beautiful interfaces.',
       
       section_projects: 'Projects',
@@ -96,7 +96,7 @@ const resources = {
       
       section_about: 'عني',
       about_title: 'منشئ متعدد الاهتمامات',
-      about_desc1: 'الأكواد، العمارة، الفن الرقمي. أنا منخرط في مختلف الأنشطة الإبداعية. بوتات Discord، ملحقات Minecraft، تطوير ويب كامل، وتصميم حضري في Cities Skylines.',
+      about_desc1: 'الأكواد، العمارة، الفن الرقمي. أنا منخرط في مختلف الأنشطة الإبداعية. بوتات Discord، ملحقات Minecraft، تطوير ويب كامل، والتخطيط الحضري في Minecraft.',
       about_desc2: 'أنا شغوف بإنشاء منتجات تعزز تجربة المستخدم. السعي للحصول على الأداء والتصميم والابتكار - تقديم أكواد نظيفة وفعالة وواجهات جميلة.',
       
       section_projects: 'المشاريع',
