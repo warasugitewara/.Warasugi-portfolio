@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FaGithub, FaTwitter, FaDiscord, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaDiscord } from 'react-icons/fa';
 
 interface SocialLink {
   icon: React.ReactNode;
@@ -15,7 +15,6 @@ export default function Social() {
     { icon: <FaGithub />, label: 'GitHub', url: 'https://github.com/warasugitewara' },
     { icon: <FaTwitter />, label: 'X', url: 'https://x.com/Warasg_Parasite' },
     { icon: <FaDiscord />, label: 'Discord', url: 'https://discord.com/users/811515262238064640' },
-    { icon: <FaLinkedin />, label: 'LinkedIn', url: 'https://linkedin.com' },
   ];
 
   const containerVariants = {
