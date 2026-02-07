@@ -67,18 +67,9 @@ export default function About() {
 
           <motion.div className="status-section" variants={itemVariants}>
             <h3>Status & Visitors</h3>
-            <div className="status-embeds">
-              <img 
-                src="https://lanyard.cnrad.dev/api/811515262238064640?idleMessage=Coding%20or%20Building" 
-                alt="Discord Status"
-                style={{ width: '100%', borderRadius: '8px', marginBottom: '16px' }}
-              />
-              <img 
-                src="https://count.getloli.com/@warasite?name=warasite&theme=rule34&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" 
-                alt="Visitor Counter"
-                style={{ width: '100%', borderRadius: '8px' }}
-              />
-            </div>
+            <p style={{ color: 'var(--text-secondary)', marginTop: '10px' }}>
+              Discord Status and Visitor Counter loaded here
+            </p>
           </motion.div>
         </div>
       </div>
