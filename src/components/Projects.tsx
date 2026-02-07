@@ -34,7 +34,19 @@ export default function Projects() {
       title: 'Shell Music Controller',
       descKey: 'proj_shell_desc',
       tags: ['Lua', 'CLI', 'Music'],
-      url: 'https://github.com/warasugitewara/shell-music-controller',
+      url: 'https://github.com/warasugitewara/Shell-music-controller',
+    },
+    {
+      title: 'Easy Cities 2D',
+      descKey: 'proj_cities_desc',
+      tags: ['TypeScript', 'Cities', 'Simulator'],
+      url: 'https://github.com/warasugitewara/easy-cities-2d',
+    },
+    {
+      title: 'MuseHeart Music Bot',
+      descKey: 'proj_muse_desc',
+      tags: ['Python', 'Discord', 'Music'],
+      url: 'https://github.com/warasugitewara/MuseHeart-MusicBot',
     },
   ];
 

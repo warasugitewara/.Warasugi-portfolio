@@ -406,11 +406,32 @@ body::after {
 
 #about {
   padding: var(--spacing-xl) var(--spacing-lg);
-  background: linear-gradient(180deg, transparent, rgba(0, 255, 0, 0.05));
+  background: 
+    linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 255, 0, 0.1) 100%),
+    url('/minecraft-city.png') center/cover no-repeat fixed;
+  background-color: #0a0a15;
   border-top: 1px solid var(--primary);
   border-bottom: 1px solid var(--accent);
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  position: relative;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#about > .container {
+  position: relative;
+  z-index: 1;
 }
 
 #about h2 {

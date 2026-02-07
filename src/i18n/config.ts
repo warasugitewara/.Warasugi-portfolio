@@ -1,4 +1,4 @@
-import i18n from 'i18next';
+import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 const resources = {
@@ -25,9 +25,11 @@ const resources = {
       // Projects Section
       section_projects: 'プロジェクト',
       proj_arabic_desc: 'Minecraft Paper 1.21.6 のサーバーチャットをアラビア語に翻訳するプラグイン',
-      proj_discord_desc: 'Minecraft Quilt 1.21.10 のクライアントサイドMod。ゲーム内チャットを Discord に中継します',
+      proj_discord_desc: 'Minecraft Quilt 1.21.10 のクライアントサイド Mod。ゲーム内チャットを Discord に中継します',
       proj_fitness_desc: 'フィットネストレーキングとトレーニング管理機能を備えた、メモリ効率的な Discord ボット',
       proj_shell_desc: 'Lua ベースのシェル楽曲制御ツール。コマンドラインから音楽を操る',
+      proj_cities_desc: 'Cities Skylines 向けブラウザシミュレータ。2D で都市を設計・管理できる開発支援ツール',
+      proj_muse_desc: '[Fork] MuseHeart Music Bot - Python で実装した Discord 用音楽ボット。Last.fm 連携や複数機能搭載（翻訳・カスタマイズ版）',
       view_github: 'GitHub で見る →',
       
       // Skills Section
@@ -65,6 +67,8 @@ const resources = {
       proj_discord_desc: 'Minecraft Quilt 1.21.10 client-side mod relaying in-game chat to Discord',
       proj_fitness_desc: 'Memory-efficient Discord bot with fitness tracking and training management',
       proj_shell_desc: 'Lua-based shell music control tool. Command your music from the terminal',
+      proj_cities_desc: 'Browser-based simulator for Cities Skylines. Design and manage 2D cities with this development support tool',
+      proj_muse_desc: '[Fork] MuseHeart Music Bot - Discord music bot powered by Python. Features Last.fm integration and multiple playback options (translated & customized version)',
       view_github: 'View on GitHub →',
       
       skills_title: 'What do I do?',
@@ -100,6 +104,8 @@ const resources = {
       proj_discord_desc: 'ملحق جانب العميل Minecraft Quilt 1.21.10 يعيد بث دردشة اللعبة إلى Discord',
       proj_fitness_desc: 'بوت Discord فعال في الذاكرة مع تتبع اللياقة البدنية وإدارة التدريب',
       proj_shell_desc: 'أداة تحكم موسيقى الأصداف القائمة على Lua. تحكم بموسيقاك من سطر الأوامر',
+      proj_cities_desc: 'محاكي متصفح لـ Cities Skylines. صمم وأدر المدن ثنائية الأبعاد باستخدام أداة دعم التطوير هذه',
+      proj_muse_desc: '[Fork] MuseHeart Music Bot - بوت موسيقى Discord مدعوم بـ Python. يتميز بتكامل Last.fm وخيارات تشغيل متعددة (نسخة مترجمة ومخصصة)',
       view_github: 'عرض على GitHub →',
       
       skills_title: 'ماذا أفعل؟',
@@ -115,7 +121,7 @@ const resources = {
   }
 };
 
-i18n
+i18next
   .use(initReactI18next)
   .init({
     resources,
@@ -126,4 +132,4 @@ i18n
     }
   });
 
-export default i18n;
+export default i18next;
