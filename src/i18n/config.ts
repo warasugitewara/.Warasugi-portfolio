@@ -321,6 +321,38 @@ const resources = {
       section_social: 'Social',
       social_desc: 'Conecte-se comigo',
     }
+  },
+  lv: {
+    translation: {
+      hero_subtitle: 'Daudzpusīgs Radītājs / Pilsētas Plānotājs',
+      hero_description: 'Rakstu kodu, būvēju pilsētas, dažkārt pazūdu. Pētnieku digitālos virzienus no Hokaidoā.',
+      btn_projects: 'Projekti',
+      btn_connect: 'Savienoties',
+      nav_about: 'Par mani',
+      nav_projects: 'Projekti',
+      nav_skills: 'Prasmes',
+      nav_social: 'Sociālie Tīkli',
+      section_about: 'Par mani',
+      about_title: 'Pašproclamēts Vairāk-Radītājs',
+      about_desc1: 'Kods, arhitektūra, digitālā māksla. Es iesaistītos dažādās radošās aktivitātēs. Discord boti, Minecraft spraudņi, pilnsteka tīmekļa izstrāde un pilsētu plānošana Minecraftā.',
+      about_desc2: 'Man ir aizraušanās radīt produktus, kas uzlabo lietotāja pieredzi. Tiecamies pēc veiktspējas, dizaina un inovācijas, nodrošinot tīru, efektīvu kodu un skaistus interfeisus.',
+      section_projects: 'Projekti',
+      proj_arabic_desc: 'Minecraft Paper 1.21.6 servera čata tulkošanas spraudnis uz arābu valodu',
+      proj_discord_desc: 'Minecraft Quilt 1.21.10 klienta puses mods. Retranslē spēles čatu uz Discord',
+      proj_fitness_desc: 'Atmiņas efektīvs Discord bots ar fitnesa izsekošanu un treninga pārvaldību',
+      proj_shell_desc: 'Uz Lua balstīts čokolādes mūzikas vadības rīks. Kontrolējiet savu mūziku no termināļa',
+      proj_cities_desc: 'Pārlūka simulators Cities Skylines. Projektējiet un pārvaldiet 2D pilsētas ar šo izstrādes atbalsta rīku',
+      proj_muse_desc: '[Fork] MuseHeart Music Bot - Python darbināts Discord mūzikas bots. Ir Last.fm integrācija un vairākas atskaņošanas opcijas (tulkotā un pielāgotā versija)',
+      view_github: 'Skatīt GitHub →',
+      skills_title: 'Ko es darītu?',
+      skill_languages: 'Programmēšanas valodas',
+      skill_web: 'Tīmeklis',
+      skill_gamedev: 'Spēļu Izstrāde',
+      skill_urban: 'Pilsētu Plānošana',
+      skill_tools: 'Rīki un Vairāk',
+      section_social: 'Sociālie Tīkli',
+      social_desc: 'Savienoties ar mani',
+    }
   }
 };
 

@@ -15,6 +15,7 @@ const LANGUAGES = [
   { code: 'de', name: 'German', localName: 'Deutsch', flag: '🇩🇪' },
   { code: 'it', name: 'Italian', localName: 'Italiano', flag: '🇮🇹' },
   { code: 'pt', name: 'Portuguese', localName: 'Português', flag: '🇵🇹' },
+  { code: 'lv', name: 'Latvian', localName: 'Latviešu', flag: '🇱🇻' },
 ];
 
 export default function Header() {
