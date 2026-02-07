@@ -509,10 +509,18 @@ body::after {
 }
 
 .status-section {
-  background: rgba(0, 255, 0, 0.02);
-  border: 1px solid var(--primary);
+  background: linear-gradient(135deg, rgba(0, 255, 0, 0.05), rgba(255, 0, 255, 0.02));
+  border: 2px solid var(--primary);
   padding: var(--spacing-lg);
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.1), inset 0 0 20px rgba(0, 255, 0, 0.02);
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+}
+
+.status-section:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.2), inset 0 0 20px rgba(0, 255, 0, 0.05);
 }
 
 .status-section h3 {
@@ -520,18 +528,29 @@ body::after {
   color: var(--accent);
   margin-bottom: var(--spacing-md);
   text-shadow: 0 0 10px var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.status-embeds {
+.status-container {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
+  align-items: center;
+  justify-content: center;
 }
 
-.status-embeds img {
+.status-container img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 8px;
+  transition: var(--transition);
+  filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.3));
+}
+
+.status-container img:hover {
+  filter: drop-shadow(0 0 20px rgba(255, 0, 255, 0.5)) brightness(1.1);
 }
 
 /* ============================================
