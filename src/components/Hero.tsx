@@ -2,7 +2,11 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import './Header.css';
 
-export default function Hero() {
+interface HeroProps {
+  avatarUrl?: string;
+}
+
+export default function Hero({ avatarUrl }: HeroProps) {
   const { t } = useTranslation();
 
   const containerVariants = {
@@ -97,7 +101,21 @@ export default function Hero() {
               animate={{ rotate: 360 }}
               transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
             >
-              💡
+              {avatarUrl ? (
+                <img 
+                  src={avatarUrl} 
+                  alt="GitHub Avatar" 
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '50%',
+                    objectFit: 'cover',
+                    display: 'block'
+                  }}
+                />
+              ) : (
+                '💡'
+              )}
             </motion.div>
             <div className="avatar-glow" />
           </div>
