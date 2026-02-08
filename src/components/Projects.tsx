@@ -19,10 +19,10 @@ export default function Projects() {
       url: 'https://github.com/warasugitewara/arabic-translator-MCplugin',
     },
     {
-      title: 'Discord Chat Relay',
-      descKey: 'proj_discord_desc',
-      tags: ['Java', 'Minecraft', 'Discord'],
-      url: 'https://github.com/warasugitewara/discord-chat-relay',
+      title: 'Mouse Wheel Tool',
+      descKey: 'proj_mouse_wheel_desc',
+      tags: ['Java', 'Windows', 'Tool'],
+      url: 'https://github.com/warasugitewara/mouse-wheel-tool',
     },
     {
       title: 'FitnessBot Discord',

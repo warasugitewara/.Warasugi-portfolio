@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+﻿import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 const resources = {
@@ -19,6 +19,7 @@ const resources = {
       section_projects: 'プロジェクト',
       proj_arabic_desc: 'Minecraft Paper 1.21.6 のサーバーチャットをアラビア語に翻訳するプラグイン',
       proj_discord_desc: 'Minecraft Quilt 1.21.10 のクライアントサイド Mod。ゲーム内チャットを Discord に中継します',
+       proj_mouse_wheel_desc: 'Java 21+ 対応のマウスホイール自動回転ツール。Windows/Linux クロスプラットフォーム対応',
       proj_fitness_desc: 'フィットネストレーキングとトレーニング管理機能を備えた、メモリ効率的な Discord ボット',
       proj_shell_desc: 'Lua ベースのシェル楽曲制御ツール。コマンドラインから音楽を操る',
       proj_cities_desc: 'Cities Skylines 向けブラウザシミュレータ。2D で都市を設計・管理できる開発支援ツール',
@@ -51,6 +52,7 @@ const resources = {
       section_projects: 'Projects',
       proj_arabic_desc: 'Minecraft Paper 1.21.6 server chat translator to Arabic plugin',
       proj_discord_desc: 'Minecraft Quilt 1.21.10 client-side mod relaying in-game chat to Discord',
+       proj_mouse_wheel_desc: 'Java 21+ mouse wheel auto-rotation tool. Cross-platform support for Windows/Linux',
       proj_fitness_desc: 'Memory-efficient Discord bot with fitness tracking and training management',
       proj_shell_desc: 'Lua-based shell music control tool. Command your music from the terminal',
       proj_cities_desc: 'Browser-based simulator for Cities Skylines. Design and manage 2D cities with this development support tool',
@@ -83,6 +85,7 @@ const resources = {
       section_projects: 'المشاريع',
       proj_arabic_desc: 'ملحق ترجمة دردشة خادم Minecraft Paper 1.21.6 إلى اللغة العربية',
       proj_discord_desc: 'ملحق جانب العميل Minecraft Quilt 1.21.10 يعيد بث دردشة اللعبة إلى Discord',
+       proj_mouse_wheel_desc: 'أداة تدوير عجلة الماوس التلقائية متوافقة مع Java 21+. دعم منصات متعددة لـ Windows/Linux',
       proj_fitness_desc: 'بوت Discord فعال في الذاكرة مع تتبع اللياقة البدنية وإدارة التدريب',
       proj_shell_desc: 'أداة تحكم موسيقى الأصداف القائمة على Lua. تحكم بموسيقاك من سطر الأوامر',
       proj_cities_desc: 'محاكي متصفح لـ Cities Skylines. صمم وأدر المدن ثنائية الأبعاد باستخدام أداة دعم التطوير هذه',
@@ -115,6 +118,7 @@ const resources = {
       section_projects: '项目',
       proj_arabic_desc: 'Minecraft Paper 1.21.6服务器聊天阿拉伯语翻译插件',
       proj_discord_desc: 'Minecraft Quilt 1.21.10客户端Mod。将游戏内聊天转发到Discord',
+       proj_mouse_wheel_desc: 'Java 21+鼠标滚轮自动旋转工具。支持Windows/Linux跨平台',
       proj_fitness_desc: '具有健身追踪和训练管理功能的内存高效Discord机器人',
       proj_shell_desc: '基于Lua的Shell音乐控制工具。从终端控制您的音乐',
       proj_cities_desc: 'Cities Skylines浏览器模拟器。使用此开发支持工具设计和管理2D城市',
@@ -147,6 +151,7 @@ const resources = {
       section_projects: '프로젝트',
       proj_arabic_desc: 'Minecraft Paper 1.21.6 서버 채팅을 아랍어로 번역하는 플러그인',
       proj_discord_desc: 'Minecraft Quilt 1.21.10 클라이언트 모드. 게임 내 채팅을 Discord로 중계합니다',
+       proj_mouse_wheel_desc: 'Java 21+ 마우스 휠 자동 회전 도구. Windows/Linux 크로스 플랫폼 지원',
       proj_fitness_desc: '피트니스 추적 및 훈련 관리 기능이 있는 메모리 효율적인 Discord 봇',
       proj_shell_desc: 'Lua 기반 쉘 음악 제어 도구. 터미널에서 음악을 제어하세요',
       proj_cities_desc: 'Cities Skylines 브라우저 시뮬레이터. 이 개발 지원 도구로 2D 도시를 설계하고 관리합니다',
@@ -179,6 +184,7 @@ const resources = {
       section_projects: 'Proyectos',
       proj_arabic_desc: 'Plugin de traducción del chat del servidor Minecraft Paper 1.21.6 al árabe',
       proj_discord_desc: 'Mod del lado del cliente de Minecraft Quilt 1.21.10. Retransmite el chat del juego a Discord',
+       proj_mouse_wheel_desc: 'Herramienta de rotación automática de rueda de ratón compatible con Java 21+. Soporte multiplataforma para Windows/Linux',
       proj_fitness_desc: 'Bot de Discord eficiente en memoria con seguimiento de fitness y gestión de entrenamiento',
       proj_shell_desc: 'Herramienta de control de música de shell basada en Lua. Controla tu música desde la terminal',
       proj_cities_desc: 'Simulador basado en navegador para Cities Skylines. Diseña y administra ciudades 2D con esta herramienta de soporte de desarrollo',
@@ -211,6 +217,7 @@ const resources = {
       section_projects: 'Projets',
       proj_arabic_desc: 'Plugin de traduction du chat du serveur Minecraft Paper 1.21.6 en arabe',
       proj_discord_desc: 'Mod côté client de Minecraft Quilt 1.21.10. Relaie le chat du jeu vers Discord',
+       proj_mouse_wheel_desc: 'Outil de rotation automatique de la molette de la souris compatible Java 21+. Support multiplateforme pour Windows/Linux',
       proj_fitness_desc: 'Bot Discord efficace en mémoire avec suivi de la condition physique et gestion de l\'entraînement',
       proj_shell_desc: 'Outil de contrôle de musique Shell basé sur Lua. Contrôlez votre musique depuis le terminal',
       proj_cities_desc: 'Simulateur basé sur navigateur pour Cities Skylines. Concevez et gérez des villes 2D avec cet outil de support de développement',
@@ -243,6 +250,7 @@ const resources = {
       section_projects: 'Projekte',
       proj_arabic_desc: 'Minecraft Paper 1.21.6 Server-Chat-Übersetzungs-Plugin ins Arabische',
       proj_discord_desc: 'Minecraft Quilt 1.21.10 Client-seitiges Mod. Leitet In-Game-Chat zu Discord weiter',
+       proj_mouse_wheel_desc: 'Java 21+ kompatibles Mausrad-Automatisch-Drehwerkzeug. Plattformübergreifende Unterstützung für Windows/Linux',
       proj_fitness_desc: 'Speichereffizientes Discord-Bot mit Fitness-Tracking und Trainingsmanagement',
       proj_shell_desc: 'Lua-basiertes Shell-Musiksteuerungstool. Steuere deine Musik vom Terminal aus',
       proj_cities_desc: 'Browser-basierter Simulator für Cities Skylines. Entwerfe und verwalte 2D-Städte mit diesem Entwicklungsunterstützungstool',
@@ -275,6 +283,7 @@ const resources = {
       section_projects: 'Progetti',
       proj_arabic_desc: 'Plugin di traduzione chat server Minecraft Paper 1.21.6 in arabo',
       proj_discord_desc: 'Mod lato client Minecraft Quilt 1.21.10. Trasferisce la chat di gioco a Discord',
+       proj_mouse_wheel_desc: 'Strumento di rotazione automatica della rotella del mouse compatibile con Java 21+. Supporto multipiattaforma per Windows/Linux',
       proj_fitness_desc: 'Bot Discord efficiente in memoria con tracciamento fitness e gestione dell\'allenamento',
       proj_shell_desc: 'Strumento di controllo musica Shell basato su Lua. Controlla la tua musica dal terminale',
       proj_cities_desc: 'Simulatore basato su browser per Cities Skylines. Progetta e gestisci città 2D con questo strumento di supporto allo sviluppo',
@@ -307,6 +316,7 @@ const resources = {
       section_projects: 'Projetos',
       proj_arabic_desc: 'Plugin de tradução de chat do servidor Minecraft Paper 1.21.6 para árabe',
       proj_discord_desc: 'Mod do lado do cliente Minecraft Quilt 1.21.10. Retransmite o chat do jogo para Discord',
+       proj_mouse_wheel_desc: 'Ferramenta de rotação automática da roda do mouse compatível com Java 21+. Suporte multiplataforma para Windows/Linux',
       proj_fitness_desc: 'Bot Discord eficiente em memória com rastreamento de fitness e gerenciamento de treinamento',
       proj_shell_desc: 'Ferramenta de controle de música Shell baseada em Lua. Controle sua música do terminal',
       proj_cities_desc: 'Simulador baseado em navegador para Cities Skylines. Projete e gerencie cidades 2D com esta ferramenta de suporte ao desenvolvimento',
@@ -339,6 +349,7 @@ const resources = {
       section_projects: 'Projekti',
       proj_arabic_desc: 'Minecraft Paper 1.21.6 servera čata tulkošanas spraudnis uz arābu valodu',
       proj_discord_desc: 'Minecraft Quilt 1.21.10 klienta puses mods. Retranslē spēles čatu uz Discord',
+       proj_mouse_wheel_desc: 'Java 21+ saderīgs peles riteņa automātiskās rotācijas rīks. Vairākplatformu atbalsts Windows/Linux',
       proj_fitness_desc: 'Atmiņas efektīvs Discord bots ar fitnesa izsekošanu un treninga pārvaldību',
       proj_shell_desc: 'Uz Lua balstīts čokolādes mūzikas vadības rīks. Kontrolējiet savu mūziku no termināļa',
       proj_cities_desc: 'Pārlūka simulators Cities Skylines. Projektējiet un pārvaldiet 2D pilsētas ar šo izstrādes atbalsta rīku',
@@ -368,3 +379,8 @@ i18next
   });
 
 export default i18next;
+
+
+
+
+
