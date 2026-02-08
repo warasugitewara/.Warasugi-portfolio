@@ -75,12 +75,17 @@ export default function Social() {
           transition={{ delay: 0.3 }}
         >
           <div className="embeds-container">
-            <div className="discord-wrapper">
-              <a href="https://discord.com/users/811515262238064640" target="_blank" rel="noopener noreferrer">
+            <div className="tool-wrapper">
+              <a 
+                href="https://github.com/warasugitewara/mouse-wheel-tool" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="tool-link"
+              >
                 <img 
-                  src="https://lanyard.cnrad.dev/api/811515262238064640?theme=dark&bg=121212&borderRadius=12px&hideDecoration=false" 
-                  alt="Discord Status"
-                  className="discord-status-image"
+                  src="https://img.shields.io/badge/Mouse%20Wheel%20Tool-v1.0.0-blue?style=for-the-badge&logo=github" 
+                  alt="Mouse Wheel Tool"
+                  className="tool-badge"
                   loading="lazy"
                 />
               </a>

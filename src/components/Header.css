@@ -1038,6 +1038,34 @@ body::after {
   display: block;
 }
 
+.tool-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.tool-link:hover {
+  transform: scale(1.05);
+}
+
+.tool-badge {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 15px rgba(0, 255, 0, 0.3));
+  transition: filter 0.3s ease;
+}
+
+.tool-link:hover .tool-badge {
+  filter: drop-shadow(0 0 25px rgba(0, 255, 0, 0.5));
+}
+
 .discord-status-image:hover {
   filter: drop-shadow(0 0 30px rgba(0, 255, 0, 0.4));
 }
