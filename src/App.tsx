@@ -61,7 +61,7 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="header-content">
-          <h1>warasugitewara</h1>
+          <h1>.Warasugi</h1>
           <a href="https://github.com/warasugitewara" target="_blank" rel="noopener noreferrer" className="gh-link">
             GitHub
           </a>
@@ -74,7 +74,7 @@ function App() {
             <img src={avatarUrl} alt="Avatar" className="avatar" />
           )}
           <div className="hero-content">
-            <h2>{gitHubUser?.name || 'warasugitewara'}</h2>
+            <h2>{gitHubUser?.name || '.Warasugi'}</h2>
             <p>{gitHubUser?.bio}</p>
             {gitHubUser?.location && <p className="location">📍 {gitHubUser.location}</p>}
           </div>
@@ -113,7 +113,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>© 2024 warasugitewara</p>
+        <p>© 2024 .Warasugi</p>
       </footer>
     </div>
   )
