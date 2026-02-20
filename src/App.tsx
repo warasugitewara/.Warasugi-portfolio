@@ -106,7 +106,7 @@ function App() {
           <h3>Links</h3>
           <nav className="link-list">
             <a href="https://github.com/warasugitewara" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://twitter.com/warasugitewara" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://x.com/Warasg_Parasite" target="_blank" rel="noopener noreferrer">X</a>
             <a href="https://discord.com/users/811515262238064640" target="_blank" rel="noopener noreferrer">Discord</a>
           </nav>
         </section>
