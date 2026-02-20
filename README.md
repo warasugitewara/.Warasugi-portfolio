@@ -1,4 +1,4 @@
-# warasugitewara Portfolio
+# .Warasugi Portfolio
 
 シンプルで軽量なポートフォリオサイト。
 
