@@ -7,15 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: 'terser',
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'framer-motion'],
-          i18n: ['i18next', 'react-i18next'],
-        },
-      },
-    },
+    minify: false,
   },
   server: {
     port: 3000,
