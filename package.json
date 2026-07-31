@@ -8,6 +8,7 @@
     "build": "tsc -b && vp build",
     "preview": "vp preview",
     "lint": "vp lint .",
+    "test": "vp test",
     "type-check": "tsc -b --noEmit",
     "start": "bun run server.ts",
     "prepare": "vp config"
@@ -31,7 +32,8 @@
     "typescript": "~6.0.3",
     "typescript-eslint": "^8.63.0",
     "vite": "npm:@voidzero-dev/vite-plus-core@latest",
-    "vite-plus": "latest"
+    "vite-plus": "latest",
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest"
   },
   "packageManager": "npm@11.13.0",
   "overrides": {

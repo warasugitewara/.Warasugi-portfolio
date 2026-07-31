@@ -12,10 +12,21 @@ const InfrastructurePage = lazy(() =>
 );
 
 function App() {
-  const { lang, i18n, switchLanguage } = useI18n("ja");
+  const { lang, i18n, status, switchLanguage, retry } = useI18n("ja");
   const { theme, toggleTheme } = useTheme("dark");
 
-  if (!i18n) {
+  if (status === "error") {
+    return (
+      <div className="loading" role="alert">
+        <p>表示データを読み込めませんでした / Failed to load translations.</p>
+        <button type="button" onClick={retry}>
+          再試行 / Retry
+        </button>
+      </div>
+    );
+  }
+
+  if (!i18n || status === "loading") {
     return <div className="loading">Loading...</div>;
   }
 
