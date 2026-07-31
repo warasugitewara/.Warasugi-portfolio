@@ -4,8 +4,8 @@
     "title_en": "Self-Hosted Infrastructure",
     "subtitle": "waras-nw — 3ノード Proxmox VE クラスター（OPNsense ルーティング）",
     "subtitle_en": "waras-nw — 3-node Proxmox VE cluster (OPNsense routing)",
-    "overview": "HP Z240 SFF × 2台と Dell OptiPlex 7040 SFF で構成する 3ノード Proxmox VE クラスター（waras-nw）。OPNsense をメインファイアウォール/ルータとしてネットワークを 192.168.0.x（メイン）と 192.168.1.x（隔離セグメント）に分離し、AdGuard Home（DNS フィルタ）と Twingate（ゼロトラスト）を各セグメントに冗長配置。ポートフォリオは Cloudflare Tunnel 経由で公開し、Minecraft も東京の Velocity プロキシ経由で公開するため、自宅からのインターネット直接ポート開放はゼロ。Discord ボット群・VOICEVOX 音声合成・各種セルフホストサービスを稼働し、Zabbix で全体を監視している。加えて、0.x セグメント配下の単体機（旧 Kasm WS ハードを転用・Debian 13）をベアメタル Minecraft サーバーとして運用し、Purpur サバイバル鯖を常時稼働。ワールドデータは DriveBackupV2 経由で HP-2 上の専用バックアップ CT に1週間分を自動保管している（深夜4時転送・40MB/s 帯域制限で帯域圧迫を防止）。取り出し用の FileBrowser も同 CT で稼働し、既存サービス同様 Cloudflare Tunnel 経由でアクセスする。",
-    "overview_en": "A 3-node Proxmox VE cluster (waras-nw) built from two HP Z240 SFF machines and a Dell OptiPlex 7040 SFF. OPNsense acts as the main firewall/router, splitting the network into 192.168.0.x (main) and 192.168.1.x (isolated segment), with AdGuard Home (DNS filtering) and Twingate (zero-trust) deployed redundantly across both segments. The portfolio is served through Cloudflare Tunnel and Minecraft is exposed via a Velocity proxy in Tokyo, so there are zero direct inbound ports opened from home. It runs a fleet of Discord bots, VOICEVOX speech synthesis, and various self-hosted services, all monitored by Zabbix. In addition, a standalone box under the 0.x segment (repurposed former Kasm WS hardware, Debian 13) serves as a bare-metal Minecraft server running an always-on Purpur survival world. World data is automatically kept for one week on a dedicated backup CT on HP-2 via DriveBackupV2 (transferred at 4 AM with a 40MB/s bandwidth cap to avoid saturating the link). A FileBrowser instance for retrieval runs on the same CT and, like the other services, is accessed through Cloudflare Tunnel.",
+    "overview": "HP Z240 SFF × 2台と Dell OptiPlex 7040 SFF で構成する 3ノード Proxmox VE クラスター（waras-nw）。OPNsense をメインファイアウォール/ルータとしてネットワークを 192.168.0.x（メイン）と 192.168.1.x（隔離セグメント）に分離し、AdGuard Home（DNS フィルタ）と Twingate（ゼロトラスト）を各セグメントに冗長配置。ポートフォリオは Cloudflare Tunnel 経由で公開し、Minecraft も東京の Velocity プロキシ経由で公開するため、自宅からのインターネット直接ポート開放はゼロ。Discord ボット群・VOICEVOX 音声合成・各種セルフホストサービスを稼働し、Zabbix で全体を監視している。加えて、0.x セグメント配下の単体機（旧 Kasm WS ハードを転用・Debian 13）をベアメタル Minecraft サーバーとして運用し、Purpur サバイバル鯖を常時稼働。加えて同一機で身内用の Terraria サバイバル鯖（LAN 内限定・外部公開なし）も稼働させている。ワールドデータは DriveBackupV2 経由で HP-2 上の専用バックアップ CT に1週間分を自動保管している（深夜4時転送・40MB/s 帯域制限で帯域圧迫を防止）。取り出し用の FileBrowser も同 CT で稼働し、既存サービス同様 Cloudflare Tunnel 経由でアクセスする。",
+    "overview_en": "A 3-node Proxmox VE cluster (waras-nw) built from two HP Z240 SFF machines and a Dell OptiPlex 7040 SFF. OPNsense acts as the main firewall/router, splitting the network into 192.168.0.x (main) and 192.168.1.x (isolated segment), with AdGuard Home (DNS filtering) and Twingate (zero-trust) deployed redundantly across both segments. The portfolio is served through Cloudflare Tunnel and Minecraft is exposed via a Velocity proxy in Tokyo, so there are zero direct inbound ports opened from home. It runs a fleet of Discord bots, VOICEVOX speech synthesis, and various self-hosted services, all monitored by Zabbix. In addition, a standalone box under the 0.x segment (repurposed former Kasm WS hardware, Debian 13) serves as a bare-metal Minecraft server running an always-on Purpur survival world. The same box also hosts a LAN-only Terraria survival server for close friends (no external exposure). World data is automatically kept for one week on a dedicated backup CT on HP-2 via DriveBackupV2 (transferred at 4 AM with a 40MB/s bandwidth cap to avoid saturating the link). A FileBrowser instance for retrieval runs on the same CT and, like the other services, is accessed through Cloudflare Tunnel.",
     "design_philosophy": [
       "OPNsense をメイン FW/ルータとし、192.168.0.x / 192.168.1.x のネットワークセグメント分離",
       "AdGuard Home による DNS フィルタリング（セグメント別に冗長化）",
@@ -250,10 +250,10 @@
         "name": "Minecraft鯖",
         "name_en": "Minecraft Server",
         "hardware": "Intel Core i7-3770 + RAM 16GB DDR3 + SATA SSD 256GB",
-        "role": "スタンドアロン ベアメタル Minecraft サーバー（クラスター外・0.x 配下）",
-        "role_en": "Standalone bare-metal Minecraft server (outside the cluster · under 0.x)",
-        "purpose": "旧 Kasm WS 機を転用したベアメタル Minecraft 専用機（Kasm Workspaces は廃止・スペックは当時のまま）。Proxmox クラスター waras-nw には参加せず、192.168.0.x セグメント配下で単体稼働。仮想化オーバーヘッドの排除・ゲーム鯖としての明確な分離・クラスターのクォーラムを4台にしない判断から、あえてベアメタル運用を選択した。リソースに余裕があるため他用途への活用余地も残している。アクセスは別拠点（東京）の Velocity プロキシ経由のみで、直接の外部露出はゼロ。",
-        "purpose_en": "A dedicated bare-metal Minecraft box repurposed from the former Kasm WS machine (Kasm Workspaces retired; the specs are unchanged from then). It does not join the Proxmox cluster waras-nw and runs standalone under the 192.168.0.x segment. Bare-metal operation was chosen deliberately to eliminate virtualization overhead, keep the game server cleanly separated, and avoid pushing the cluster quorum to four nodes. With resources to spare, headroom is left for other uses. Access is only via the Velocity proxy at an off-site location (Tokyo), with zero direct external exposure.",
+        "role": "スタンドアロン ベアメタル ゲームサーバー（Minecraft / Terraria・クラスター外・0.x 配下）",
+        "role_en": "Standalone bare-metal game server (Minecraft / Terraria · outside the cluster · under 0.x)",
+        "purpose": "旧 Kasm WS 機を転用したベアメタル ゲーム専用機（Kasm Workspaces は廃止・スペックは当時のまま）。Proxmox クラスター waras-nw には参加せず、192.168.0.x セグメント配下で単体稼働。仮想化オーバーヘッドの排除・ゲーム鯖としての明確な分離・クラスターのクォーラムを4台にしない判断から、あえてベアメタル運用を選択した。Minecraft（Purpur）に加え、身内用の Terraria サバイバル鯖も同一機で稼働。リソースに余裕があるため他用途への活用余地も残している。Minecraft へのアクセスは別拠点（東京）の Velocity プロキシ経由のみで、Terraria は LAN 内限定。いずれも直接の外部露出はゼロ。",
+        "purpose_en": "A dedicated bare-metal game box repurposed from the former Kasm WS machine (Kasm Workspaces retired; the specs are unchanged from then). It does not join the Proxmox cluster waras-nw and runs standalone under the 192.168.0.x segment. Bare-metal operation was chosen deliberately to eliminate virtualization overhead, keep the game servers cleanly separated, and avoid pushing the cluster quorum to four nodes. Alongside Minecraft (Purpur), it also hosts a Terraria survival server for close friends on the same box. With resources to spare, headroom is left for other uses. Minecraft access is only via the Velocity proxy at an off-site location (Tokyo), while Terraria is LAN-only — neither has any direct external exposure.",
         "workloads": [
           {
             "type": "Bare-metal",
@@ -275,6 +275,13 @@
               "Access only via the off-site (Tokyo) Velocity — no direct external exposure",
               "World data backed up nightly to HP-2's MC-Backup CT via DriveBackupV2 (4 AM · 40MB/s cap · 1-week retention)"
             ]
+          },
+          {
+            "type": "Bare-metal",
+            "os": "Debian 13",
+            "name": "Terraria",
+            "purpose": "身内用のサバイバルサーバー（LAN 内限定・外部公開なし）",
+            "purpose_en": "A survival server for close friends (LAN-only · no external exposure)"
           }
         ]
       }
@@ -363,7 +370,8 @@
           "VOICEVOX 音声合成 / 読み上げボット",
           "ZenNotes（Markdown ノート同期）へ移行（後に廃止 — Google Keep / Discord / GitHub 等へ集約）",
           "Cloudflare Tunnel 公開（portfolio.warasugi.com）",
-          "Minecraft をベアメタル専用機へ移行（Kasm WS 廃止・ハード転用）+ MC-Backup CT 新設（DriveBackupV2 / FileBrowser）"
+          "Minecraft をベアメタル専用機へ移行（Kasm WS 廃止・ハード転用）+ MC-Backup CT 新設（DriveBackupV2 / FileBrowser）",
+          "同ベアメタル機に Terraria サバイバル鯖を追加（身内用・LAN 内限定）"
         ],
         "components_en": [
           "Added 2× HP Z240 SFF",
@@ -377,7 +385,8 @@
           "VOICEVOX speech synthesis / readout bot",
           "Migrated to ZenNotes (Markdown note sync), later retired — consolidated into Google Keep / Discord / GitHub, etc.",
           "Cloudflare Tunnel exposure (portfolio.warasugi.com)",
-          "Migrated Minecraft to a dedicated bare-metal box (Kasm WS retired, hardware repurposed) + set up a new MC-Backup CT (DriveBackupV2 / FileBrowser)"
+          "Migrated Minecraft to a dedicated bare-metal box (Kasm WS retired, hardware repurposed) + set up a new MC-Backup CT (DriveBackupV2 / FileBrowser)",
+          "Added a Terraria survival server on the same bare-metal box (private · LAN-only)"
         ]
       },
       "phase_3_future": {
@@ -442,6 +451,7 @@
       "applications": [
         "Zabbix",
         "Minecraft (Purpur)",
+        "Terraria",
         "GraalVM",
         "Velocity",
         "VOICEVOX",

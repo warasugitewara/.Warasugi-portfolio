@@ -28,7 +28,14 @@
   "projects": {
     "title": "Projects",
     "featured": "Featured Projects",
-    "pinned": "Pinned Repositories"
+    "pinned": "Pinned Repositories",
+    "loading": "Loading GitHub repositories...",
+    "error": "Unable to load repositories from GitHub.",
+    "empty": "No public repositories are available to display.",
+    "stale": "Showing the previous list because the latest update failed.",
+    "retry": "Retry",
+    "viewGitHub": "View on GitHub",
+    "updated": "Updated"
   },
   "philosophy": {
     "title": "Development Philosophy"
@@ -91,7 +98,7 @@
     "notes2": "DNS redundancy — AdGuard Home deployed per segment (1.x: CT106 / 0.x: CT107)",
     "notes3": "Zero-trust redundancy — Twingate deployed across 2 segments (1.x: HP-2 CT105 / 0.x: Dell CT102)",
     "notes4": "Public exposure via Cloudflare Tunnel only — portfolio.warasugi.com (Dell CT103) served with zero inbound",
-    "notes5": "Minecraft runs on a dedicated bare-metal box (Debian 13 · under 0.x · repurposed Kasm WS) hosting an always-on Purpur survival server — access only via off-site (Tokyo) Velocity with zero direct exposure (linked to Dell CT301). GraalVM 17/21/25.1 in use; webmap exposed via Cloudflare Tunnel",
+    "notes5": "Minecraft runs on a dedicated bare-metal box (Debian 13 · under 0.x · repurposed Kasm WS) hosting an always-on Purpur survival server — access only via off-site (Tokyo) Velocity with zero direct exposure (linked to Dell CT301). GraalVM 17/21/25.1 in use; webmap exposed via Cloudflare Tunnel. The same box also runs a LAN-only Terraria survival server for close friends (no external exposure)",
     "notes6": "World backup — DriveBackupV2 transfers to HP-2 MC-Backup (CT100) at 4 AM (40MB/s bandwidth cap · 1-week retention). Retrieval via FileBrowser (exposed over Cloudflare Tunnel)",
     "notes7": "Monitoring & defense-in-depth — Zabbix (Dell CT400) + Ed25519 SSH keys + TOTP 2FA + Anubis",
     "swipeHint": "← Swipe to scroll →",

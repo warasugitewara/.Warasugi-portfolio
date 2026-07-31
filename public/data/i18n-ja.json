@@ -28,7 +28,14 @@
   "projects": {
     "title": "プロジェクト",
     "featured": "代表プロジェクト",
-    "pinned": "ピン固定リポジトリ"
+    "pinned": "ピン固定リポジトリ",
+    "loading": "GitHub リポジトリを読み込み中...",
+    "error": "GitHub からリポジトリを取得できませんでした。",
+    "empty": "表示できる公開リポジトリがありません。",
+    "stale": "最新情報の取得に失敗したため、直前の一覧を表示しています。",
+    "retry": "再試行",
+    "viewGitHub": "GitHub で見る",
+    "updated": "更新"
   },
   "philosophy": {
     "title": "開発哲学"
@@ -91,7 +98,7 @@
     "notes2": "DNS 冗長 — AdGuard Home を各セグメントに配置 (1.x: CT106 / 0.x: CT107)",
     "notes3": "ゼロトラスト冗長 — Twingate を 2 セグメントに配置 (1.x: HP-2 CT105 / 0.x: Dell CT102)",
     "notes4": "公開は Cloudflare Tunnel のみ — portfolio.warasugi.com (Dell CT103) を受信ゼロで公開",
-    "notes5": "Minecraft はベアメタル専用機（Debian 13 · 0.x 配下 · 旧 Kasm WS 転用）で Purpur サバイバルを常時稼働 — アクセスは別拠点（東京）の Velocity 経由のみで直接露出ゼロ（Dell CT301 連携）。GraalVM 17/21/25.1 併用・webmap は Cloudflare Tunnel 公開",
+    "notes5": "Minecraft はベアメタル専用機（Debian 13 · 0.x 配下 · 旧 Kasm WS 転用）で Purpur サバイバルを常時稼働 — アクセスは別拠点（東京）の Velocity 経由のみで直接露出ゼロ（Dell CT301 連携）。GraalVM 17/21/25.1 併用・webmap は Cloudflare Tunnel 公開。同一機で身内用の Terraria サバイバル鯖（LAN 内限定・外部公開なし）も稼働",
     "notes6": "ワールドバックアップ — DriveBackupV2 が深夜4時に HP-2 MC-Backup (CT100) へ転送（40MB/s 帯域制限・1週間分保持）。取り出しは FileBrowser（Cloudflare Tunnel 公開）",
     "notes7": "監視・多層防御 — Zabbix (Dell CT400) + Ed25519 SSH鍵 + TOTP 2FA + Anubis",
     "swipeHint": "← スワイプでスクロール →",
